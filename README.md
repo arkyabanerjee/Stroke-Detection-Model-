@@ -1,10 +1,10 @@
 ## Stroke-Detection-Model-
-This is a machine learning model that predicts whether a person has had a stroke based on several health-related features.
+#This is a machine learning model that predicts whether a person has had a stroke based on several health-related features.
 
-Dataset
+# Dataset:
 The dataset used to train and evaluate this model was obtained from the Stroke Prediction Dataset on Kaggle. The dataset contains 5,110 patient records with 11 features such as age, hypertension, heart disease, smoking status, and more.
 
-Model Selection
+# Model Selection
 After exploring the dataset and preprocessing the data, we decided to use an ANN and a XGBoost Classifier as our model. We chose XGBoost because it is a highly effective model for handling imbalanced datasets like the one we were working with. We also used undersampling to balance the dataset and improve the model's performance.
 
 Hyperparameter Tuning
@@ -33,6 +33,8 @@ Precision: 0.66
 Recall: 0.96
 F1-score: 0.78
 ROC AUC: 0.72
+
+The model works very well for not giving false negative predictions, which is the most important criteria that needs to be fulfilled in this scenario. 
 Usage
 To use the model, you will need to install the required Python packages listed in the requirements.txt file. Once installed, you can load the model using the following code:
 
